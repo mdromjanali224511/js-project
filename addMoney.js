@@ -40,7 +40,8 @@ document.getElementById('adMoneybtn').addEventListener('click', function () {
 
 })
 
-document.getElementById('cashout').addEventListener('click', function () {
+document.getElementById('cashout').addEventListener('click', function (event) {
+    event.preventDefault()
     document.getElementById('addmoneyform').style.display = 'none';
     document.getElementById('addmoneyform3').style.display = 'none';
     document.getElementById('addmoneyform4').style.display = 'none';
@@ -48,6 +49,7 @@ document.getElementById('cashout').addEventListener('click', function () {
     document.getElementById('addmoneyform6').style.display = 'none';
     document.getElementById('addmoneyform2').style.display = 'block';
 
+    
 })
 
 document.getElementById('transfer').addEventListener('click', function () {
