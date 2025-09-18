@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-800">
+    <header class="max-w-md mx-auto bg-slate-50">
+        <section class="">
+            <div class="flex justify-center pt-50">
+                <img class="relative" src="./Payoo-MFS-Resources/assets/bg.png" alt="">
+                <img class="absolute mt-10" src="./Payoo-MFS-Resources/assets/Group.png" alt="">
+            </div>
+            <div>
+                <form class="mx-15 -mt-20" action="">
+                    <label class="grid gap-4 text-black font-bold text-2xl" for="">Mobile Number <br>
+                        <input id="logininput2"
+                            class="w-full bg-slate-200 shadow-2xl rounded-xl p-2 outline-none border-none" type="number"
+                            name="" id="" placeholder="type number" required>
+                    </label>
+                    <label class="my-5 grid gap-4 text-black font-bold text-2xl" for="">enter 4 digite pin<br>
+                        <input id="logininput"
+                            class="w-full bg-slate-200 shadow-2xl rounded-xl p-2 outline-none border-none" type="number"
+                            name="" id="" placeholder="type pin" required>
+                    </label>
+                    <button id="loginbtn" class="w-full bg-blue-700 rounded-xl p-2 text-white">Login</button>
+                </form>
+            </div>
+        </section>
+
+    </header>
+    <script>
+        document.getElementById('loginbtn').addEventListener('click', function (event) {
+            event.preventDefault()
+            const inputlogin = document.getElementById('logininput2').value;
+            const logininput = document.getElementById('logininput').value;
+            if (inputlogin.length === 11) {
+                if (logininput === '1122') {
+                    window.location.href = './mian.html'
+                } else {
+                    alert('coreckt pin')
+                }
+            } else {
+                alert('need valid caount number')
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

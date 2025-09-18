@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        .color {
+            color: rgba(8, 8, 8, 0.5);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900">
+    <header class="max-w-md mx-auto bg-slate-100 ">
+        <nav class="flex justify-between items-center mx-10 py-10">
+            <div class="flex items-center">
+                <img src="./Payoo-MFS-Resources/assets/Group.png" alt="">
+                <div>
+                    <b id="addMoneyBalance" class="text-xl">$ <span id="mianBalance">4500</span></b>
+                    <p>Available Balance</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn">Log Out</button>
+            </div>
+        </nav>
+        <!-- main hader section -->
+        <section class="mx-10">
+            <h1 class=" text-3xl font-bold"><i class="fa-solid fa-fire text-orange-400"></i> Welcome to Payoo</h1>
+            <p class="color mt-4">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        </section>
+        <section class="mx-10 my-10">
+            <!-- main card -->
+            <div class="grid grid-cols-3 gap-3">
+                <!-- sub card -->
+                <button id="adMoneybtn" class="rounded-xl border border-gray-500 shadow-
+         2xl p-3  text-center">
+                    <img class="mx-auto" src="./Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                    <b class="color">Add Money</b>
+                </button>
+                <button id="cashout" class="rounded-xl border border-gray-500 shadow-
+         2xl p-3  text-center">
+                    <img class="mx-auto" src="./Payoo-MFS-Resources/assets/money1.png" alt="">
+                    <b class="color">Cashout</b>
+                </button>
+                <button id="transfer" class="rounded-xl border border-gray-500 shadow-
+         2xl p-3  text-center">
+                    <img class="mx-auto" src="./Payoo-MFS-Resources/assets/bonus1.png" alt="">
+                    <b class="color">Transfer Money</b>
+                </button>
+                <button id="getBonus" class="rounded-xl border border-gray-500 shadow-
+         2xl p-3  text-center">
+                    <img class="mx-auto" src="./Payoo-MFS-Resources/assets/send1.png" alt="">
+                    <b class="color">Get Bonus</b>
+                </button>
+                <button id="paybill2" class="rounded-xl border border-gray-500 shadow-
+         2xl p-3  text-center">
+                    <img class="mx-auto" src="./Payoo-MFS-Resources/assets/purse1.png" alt="">
+                    <b class="color">Pay Bill</b>
+                </button>
+                <button id="transition" class="rounded-xl border border-gray-500 shadow-
+         2xl p-3  text-center">
+                    <img class="mx-auto" src="./Payoo-MFS-Resources/assets/bonus1.png" alt="">
+                    <b class="color">Transition</b>
+                </button>
+            </div>
+        </section>
+        <!-- addmoney -->
+        <section id="addmoneyform" class="mx-10">
+            <form action="">
+                <h1 class="text-black font-bold">Add Money</h1>
+                <fieldset class="bg-slate-300 rounded-xl shadow-2xl p-4 grid gap-2">
+                    <label class="mt-3" for="">Select A Bank <br>
+                        <input class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Select Bank">
+                    </label>
+                    <label class="mt-3" for="">Bank Account Number<br>
+                        <input id="ammooneyacount"
+                            class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Account Number">
+                    </label>
+                    <label class="mt-3" for="">Amount to Add <br>
+                        <input id="admoneyamount"
+                            class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Amount">
+                    </label>
+                    <label class="mt-3" for="">Pin Number<br>
+                        <input value="1122" id="asmoneypin"
+                            class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="pin">
+                    </label>
+                    <button id="addmoneybtn" class="bg-blue-700 rounded-xl p-2 my-3 btn">Add Money</button>
+
+                </fieldset>
+            </form>
+        </section>
+        <!-- addmoney -->
+        <section id="addmoneyform2" class="mx-10">
+            <form action="">
+                <h1 class="text-black font-bold">Cash Out</h1>
+                <fieldset class="bg-slate-300 rounded-xl shadow-2xl p-4 grid gap-2">
+                    <label class="mt-3" for="">Agent Number <br>
+                        <input class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Enter 11 digit number">
+                    </label>
+                    <label class="mt-3" for="">Amount<br>
+                        <input id="ammooneyacount"
+                            class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Enter Amount to withdraw">
+                    </label>
+
+                    <label class="mt-3" for="">Pin Number<br>
+                        <input value="1122" id="asmoneypin"
+                            class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="pin">
+                    </label>
+                    <button id="addmoneybtn" class="bg-blue-700 rounded-xl p-2 my-3 btn">Withdraw Money</button>
+
+                </fieldset>
+            </form>
+        </section>
+        </section>
+        <section id="addmoneyform3" class="mx-10">
+            <form action="">
+                <h1 class="text-black font-bold">Transfer Money</h1>
+                <fieldset class="bg-slate-300 rounded-xl shadow-2xl p-4 grid gap-2">
+                    <label class="mt-3" for="">User Acount Number<br>
+                        <input class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Enter 11 digit number">
+                    </label>
+                    <label class="mt-3" for="">Amount<br>
+                        <input id="ammooneyacount"
+                            class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Enter Amount to transfer">
+                    </label>
+
+                    <label class="mt-3" for="">Pin Number<br>
+                        <input value="1122" id="asmoneypin"
+                            class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Enter 4 digit pin number">
+                    </label>
+                    <button id="addmoneybtn" class="bg-blue-700 rounded-xl p-2 my-3 btn">Send Now</button>
+
+                </fieldset>
+            </form>
+        </section>
+        <!-- addmoney -->
+
+        <section id="addmoneyform4" class="mx-10">
+            <form action="">
+                <h1 class="text-black font-bold">Get Bonus</h1>
+                <fieldset class="bg-slate-300 rounded-xl shadow-2xl p-4 grid gap-2">
+                    <label class="mt-3" for="">Enter Bonus Coupon<br>
+                        <input class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Enter your caupon">
+
+                    </label>
+                    <button id="addmoneybtn" class="bg-blue-700 rounded-xl p-2 my-3 btn">Get Bonus</button>
+
+                </fieldset>
+            </form>
+        </section>
+        <section id="addmoneyform5" class="mx-10">
+            <form action="">
+                <h1 class="text-black font-bold">Pay Bill</h1>
+                <fieldset class="bg-slate-300 rounded-xl shadow-2xl p-4 grid gap-2">
+                    <label class="mt-3" for="">select to pay <br>
+                        <input class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Select Bank">
+                    </label>
+                    <label class="mt-3" for="">Biller Account Number<br>
+                        <input id="ammooneyacount"
+                            class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Account Number">
+                    </label>
+                    <label class="mt-3" for="">Amount to pay <br>
+                        <input id="admoneyamount"
+                            class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Add amount to pay">
+                    </label>
+                    <label class="mt-3" for="">Pin Number<br>
+                        <input value="1122" id="asmoneypin"
+                            class="rounded-xl border-none outline-none w-full mr-2 bg-slate-400 p-2" type="text"
+                            placeholder="Enter 4 digit pin number">
+                    </label>
+                    <button id="addmoneybtn" class="bg-blue-700 rounded-xl p-2 my-3 btn">pay Now</button>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="addmoneyform6" class=" px-10  ">
+           <div class="gap-5 grid">
+ <strong class=" text-2xl mt-5 block -mb-10">Transition History</strong> <br>
+            <button class=" p-3 justify-between bg-white w-full  flex items-center rounded-xl shadow-xl">
+                <div class="flex">
+                    <div class="mr-2 bg-slate-300 p-3 h-12 w-12 rounded-full">
+                        <img src="./Payoo-MFS-Resources/assets/money1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">Electricuty Bill</h3>
+                        <p class="color text-xl">Today 01:44am</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis-vertical text-4xl"></i>
+                </div>
+            </button>
+            <button class=" p-3 justify-between bg-white w-full rounded-xl shadow-xl flex items-center">
+                <div class="flex">
+                    <div class="mr-2 bg-slate-300 p-3 h-12 w-12 rounded-full">
+                        <img src="./Payoo-MFS-Resources/assets/money1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">Bank Diposit</h3>
+                        <p class="color text-xl">Today 01:44am</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis-vertical text-4xl"></i>
+                </div>
+            </button>
+            <button class=" p-3 justify-between bg-white w-full rounded-xl shadow-xl flex items-center">
+                <div class="flex">
+                    <div class="mr-2 bg-slate-300 p-3 h-12 w-12 rounded-full">
+                        <img src="./Payoo-MFS-Resources/assets/money1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">Mobile Recharge</h3>
+                        <p class="color text-xl">Today 01:44am</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis-vertical text-4xl"></i>
+                </div>
+            </button>
+            <button class=" p-3 justify-between bg-white w-full rounded-xl shadow-xl flex items-center">
+                <div class="flex">
+                    <div class="mr-2 bg-slate-300 p-3 h-12 w-12 rounded-full">
+                        <img src="./Payoo-MFS-Resources/assets/money1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">Gas Bill</h3>
+                        <p class="color text-xl">Today 01:44am</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis-vertical text-4xl"></i>
+                </div>
+            </button>
+           </div>
+
+        </section>
+        <section class="h-60">
+
+        </section>
+    </header>
+
+    <script>
+
+
+
+
+
+    </script>
+    <script src="./addMoney.js"></script>
+</body>
+
+</html>
